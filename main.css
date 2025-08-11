@@ -10,7 +10,7 @@ body {
 .hero {
     position: relative;
     min-height: 100vh;
-    background-image: url('mandi.jpg');
+    background-image: url('mandi22.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -159,11 +159,6 @@ body {
     transition: background-color 0.3s ease;
 }
 
-@media (max-width: 768px) {
-    .hero-section {
-        background: url('man.jpg') center/cover no-repeat;
-    }
-}
 .navbar-toggler {
     border: none;          /* remove border */
     padding: 0.5rem;       /* adjust padding */
