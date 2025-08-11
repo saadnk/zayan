@@ -1,0 +1,199 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0e0e0e;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('mandi.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px; /* Added horizontal breathing room */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+/* Navbar inside Hero */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent !important;
+    z-index: 2;
+    padding: 12px 24px; /* Balanced padding for navbar */
+}
+
+.logo-highlight {
+    color: #1A1A1A;
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 40px 20px; /* Increased padding for balance */
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 6vw, 3.8rem);
+}
+
+.hero-content h2 {
+    font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+    color: #D4AF37;
+    margin-top: 12px;
+}
+
+.hero-content p {
+    font-size: clamp(1rem, 2.3vw, 1.3rem);
+    line-height: 1.7;
+    margin: 18px 0 28px;
+}
+
+.hero-content .btn {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    padding: 12px 28px;
+    border-radius: 6px;
+}
+
+/* Extra boost for larger mobile devices */
+@media (min-width: 389px) and (max-width: 450px) {
+    .hero-content h1 {
+        font-size: 2.6rem;
+    }
+    .hero-content h2 {
+        font-size: 1.6rem;
+    }
+    .hero-content p {
+        font-size: 1.15rem;
+    }
+    .hero-content .btn {
+        font-size: 1rem;
+        padding: 14px 32px;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 30px 20px; /* Better vertical spacing on tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content {
+        padding: 25px 15px; /* Compact padding for small screens */
+    }
+}
+
+.hero-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold but not too heavy */
+    font-size: 2.8rem;
+    letter-spacing: 0.5px;
+    color: rgb(250, 250, 250);
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0); /* Soft shadow for contrast */
+    margin-bottom: 15px;
+}
+
+.zayan-title {
+    font-size: 100px; /* Increase text size */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* space between logo and text */
+}
+
+.zayan-logo { 
+    height: 35px; /* Increase logo size */
+}
+
+.btn-enquiry {
+    display: inline-block;
+    padding: 12px 24px; /* Balanced height × width */
+    background-color: #EC8B22; /* Warm golden-brown tone */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px; /* Slightly rounded corners for rectangle */
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enquiry:hover {
+    background-color: rgb(0, 0, 0); /* Darker shade on hover */
+    color: white;
+}
+
+.enq {
+    display: inline-block;
+    padding: 12px 24px; /* Balanced height × width */
+    background-color: #EC8B22; /* Warm golden-brown tone */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px; /* Slightly rounded corners for rectangle */
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        background: url('man.jpg') center/cover no-repeat;
+    }
+}
+.navbar-toggler {
+    border: none;          /* remove border */
+    padding: 0.5rem;       /* adjust padding */
+}
+
+.navbar-toggler-icon {
+    background-image: none; /* remove Bootstrap's default image */
+    width: 24px;            /* icon width */
+    height: 2px;            /* line thickness */
+    background-color: #EC8B22; /* Warm golden-brown tone */
+    position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #EC8B22;
+    left: 0;
+}
+
+.navbar-toggler-icon::before {
+    top: -8px; /* space above middle line */
+}
+
+.navbar-toggler-icon::after {
+    top: 8px;  /* space below middle line */
+}
+
+
+
