@@ -18,7 +18,8 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 20px; /* Added horizontal breathing room */
+    padding: 0 20px;
+    /* Added horizontal breathing room */
 }
 
 .hero::before {
@@ -37,7 +38,8 @@ body {
     width: 100%;
     background: transparent !important;
     z-index: 2;
-    padding: 12px 24px; /* Balanced padding for navbar */
+    padding: 12px 24px;
+    /* Balanced padding for navbar */
 }
 
 .logo-highlight {
@@ -48,7 +50,8 @@ body {
 .hero-content {
     position: relative;
     z-index: 1;
-    padding: 40px 20px; /* Increased padding for balance */
+    padding: 40px 20px;
+    /* Increased padding for balance */
     max-width: 800px;
 }
 
@@ -80,12 +83,15 @@ body {
     .hero-content h1 {
         font-size: 2.6rem;
     }
+
     .hero-content h2 {
         font-size: 1.6rem;
     }
+
     .hero-content p {
         font-size: 1.15rem;
     }
+
     .hero-content .btn {
         font-size: 1rem;
         padding: 14px 32px;
@@ -95,80 +101,100 @@ body {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .hero-content {
-        padding: 30px 20px; /* Better vertical spacing on tablets */
+        padding: 30px 20px;
+        /* Better vertical spacing on tablets */
     }
 }
 
 @media (max-width: 576px) {
     .hero-content {
-        padding: 25px 15px; /* Compact padding for small screens */
+        padding: 25px 15px;
+        /* Compact padding for small screens */
     }
 }
 
 .hero-content h1 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700; /* Bold but not too heavy */
+    font-weight: 700;
+    /* Bold but not too heavy */
     font-size: 2.8rem;
     letter-spacing: 0.5px;
     color: rgb(250, 250, 250);
-    text-shadow: 0 0 4px rgba(0, 0, 0, 0); /* Soft shadow for contrast */
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0);
+    /* Soft shadow for contrast */
     margin-bottom: 15px;
 }
 
 .zayan-title {
-    font-size: 100px; /* Increase text size */
+    font-size: 100px;
+    /* Increase text size */
     font-family: Arial, sans-serif;
     font-weight: bold;
     display: flex;
     align-items: center;
-    gap: 10px; /* space between logo and text */
+    gap: 10px;
+    /* space between logo and text */
 }
 
-.zayan-logo { 
-    height: 35px; /* Increase logo size */
+.zayan-logo {
+    height: 35px;
+    /* Increase logo size */
 }
 
 .btn-enquiry {
     display: inline-block;
-    padding: 12px 24px; /* Balanced height × width */
-    background-color: #EC8B22; /* Warm golden-brown tone */
+    padding: 12px 24px;
+    /* Balanced height × width */
+    background-color: #EC8B22;
+    /* Warm golden-brown tone */
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 16px;
-    border-radius: 8px; /* Slightly rounded corners for rectangle */
+    border-radius: 8px;
+    /* Slightly rounded corners for rectangle */
     font-weight: bold;
     border: none;
     transition: background-color 0.3s ease;
 }
 
 .btn-enquiry:hover {
-    background-color: rgb(0, 0, 0); /* Darker shade on hover */
+    background-color: rgb(0, 0, 0);
+    /* Darker shade on hover */
     color: white;
 }
 
 .enq {
     display: inline-block;
-    padding: 12px 24px; /* Balanced height × width */
-    background-color: #EC8B22; /* Warm golden-brown tone */
+    padding: 12px 24px;
+    /* Balanced height × width */
+    background-color: #EC8B22;
+    /* Warm golden-brown tone */
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 16px;
-    border-radius: 8px; /* Slightly rounded corners for rectangle */
+    border-radius: 8px;
+    /* Slightly rounded corners for rectangle */
     font-weight: bold;
     border: none;
     transition: background-color 0.3s ease;
 }
 
 .navbar-toggler {
-    border: none;          /* remove border */
-    padding: 0.5rem;       /* adjust padding */
+    border: none;
+    /* remove border */
+    padding: 0.5rem;
+    /* adjust padding */
 }
 
 .navbar-toggler-icon {
-    background-image: none; /* remove Bootstrap's default image */
-    width: 24px;            /* icon width */
-    height: 2px;            /* line thickness */
-    background-color: #EC8B22; /* Warm golden-brown tone */
+    background-image: none;
+    /* remove Bootstrap's default image */
+    width: 24px;
+    /* icon width */
+    height: 2px;
+    /* line thickness */
+    background-color: #EC8B22;
+    /* Warm golden-brown tone */
     position: relative;
 }
 
@@ -183,12 +209,68 @@ body {
 }
 
 .navbar-toggler-icon::before {
-    top: -8px; /* space above middle line */
+    top: -8px;
+    /* space above middle line */
 }
 
 .navbar-toggler-icon::after {
-    top: 8px;  /* space below middle line */
+    top: 8px;
+    /* space below middle line */
 }
 
+/* Background for mobile devices */
+/* Change hero background for mobile */
+@media (max-width: 600px) {
+    .hero {
+        background-image: url('mandi23.png');
+        background-size: cover;
+        background-position: center;
+    }
+}
 
+/* Only apply on mobile screens */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 10);
+        /* Dark background */
+        border: 2px solid #EC8B22;
+        /* Orange border */
+        border-radius: 15px;
+        margin-top: 20px;
+        padding: 1rem 0 30px;
+    }
 
+    /* Make sure links are visible */
+    .navbar-nav .nav-link {
+        color: white !important;
+        font-weight: 500;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #EC8B22 !important;
+    }
+}
+
+.navbar {
+    display: flex;
+    /* Makes items go in a row */
+    justify-content: center;
+    /* Centers them horizontally */
+    align-items: center;
+    /* Aligns them vertically */
+    gap: 20px;
+    /* Space between items */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    /* Example text color */
+}
+
+.highlight {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    /* fixed size */
+}
