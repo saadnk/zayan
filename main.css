@@ -274,3 +274,13 @@ body {
     font-size: 20px;
     /* fixed size */
 }
+/* Remove any margin-top on container-fluid globally */
+.container-fluid {
+    margin-top: 0;  /* or whatever default you want */
+}
+
+@media (min-width: 390px) and (max-width: 450px) {
+    .container-fluid {
+        margin-top: 35px;
+    }
+}
