@@ -27,7 +27,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 10);
     z-index: 0;
 }
 
@@ -141,6 +141,13 @@ body {
     height: 35px;
     /* Increase logo size */
 }
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
 
 .btn-enquiry {
     display: inline-block;
@@ -218,9 +225,6 @@ body {
     top: 8px;
     /* space below middle line */
 }
-
-/* Background for mobile devices */
-/* Change hero background for mobile */
 
 
 /* Only apply on mobile screens */
@@ -317,12 +321,56 @@ body {
         background-image: url('pb.png');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center calc(0% - 120px); /* move up by 30px */
+        background-position: center calc(0% - 110px); /* move up by 30px */
     }
 }
+.second-con {
+    background: linear-gradient(to right, #EC8B22, #000000, #EC8B22);
 
-.subcontect{
-    padding-top: 100px;
-    background-color: aqua;
-    margin-top: -100px;
+    
+}
+@media (max-width: 600px){
+    .second-con{
+        margin-top: -110px;
+    }
+}
+@media (max-width: 600px) {
+    .hero::before {
+        top: 0;
+        height: 734px;  /* set exact shade height */
+        bottom: auto;
+    }
+}
+.about-preview,
+.services-preview-home,
+.menu-preview-home {
+background: linear-gradient(to right, #EC8B22 0%, #f5f5f5 50%, #EC8B22 100%);
+
+
+
+
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.about-preview-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-preview-title,
+.section-title {
+    font-size: 2.5rem;
+    color: #a0602b;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.about-preview-text,
+.section-description,
+.menu-item p,
+.service-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #000;
 }
