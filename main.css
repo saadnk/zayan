@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    background-color: #0e0e0e;
+    background-color: #000000;
     color: white;
 }
 
@@ -10,6 +10,7 @@ body {
 .hero {
     position: relative;
     min-height: 100vh;
+
     background-image: url('mandi23.png');
     background-size: cover;
     background-position: center;
@@ -220,13 +221,7 @@ body {
 
 /* Background for mobile devices */
 /* Change hero background for mobile */
-@media (max-width: 600px) {
-    .hero {
-        background-image: url('phbd.png');
-        background-size: cover;
-        background-position: center;
-    }
-}
+
 
 /* Only apply on mobile screens */
 @media (max-width: 991px) {
@@ -309,4 +304,25 @@ body {
 }
 .subhea{
     color: #fff0e8;
+}
+@media (max-width: 600px) {
+  .hero {
+    min-height: 100vh; /* takes 70% of screen height on phone */
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 600px) {
+    .hero {
+        background-image: url('pb.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center calc(0% - 120px); /* move up by 30px */
+    }
+}
+
+.subcontect{
+    padding-top: 100px;
+    background-color: aqua;
+    margin-top: -100px;
 }
