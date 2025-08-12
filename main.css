@@ -279,8 +279,8 @@ body {
     margin-top: 0;  /* or whatever default you want */
 }
 
-@media (min-width: 390px) and (max-width: 450px) {
+@media (min-width: 400px) and (max-width: 450px) {
     .container-fluid {
-        margin-top: 35px;
+        margin-top: 30px;
     }
 }
