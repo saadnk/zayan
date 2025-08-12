@@ -286,6 +286,7 @@ body {
 }
 @media (min-width: 390px) and (max-width: 450px) {
     .hero-content {
-        margin-top: -100px;
+        margin-top: -80px;
     }
 }
+
