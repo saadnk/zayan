@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zayan Mandi Menu</title>
+  <link rel="stylesheet" href="css/menu.css" />
+</head>
+
+<body>
+  <header class="menu-header">
+    <div class="image-bg"></div>
+    <div class="overlay"></div>
+    <div class="header-content">
+      <h1>Our Menu</h1>
+      <p>Crafted with passion, served with love</p>
+      <p class="breadcrumb">
+        <a href="index.html"><strong>Home</strong></a> <span>/</span>Our Menu
+      </p>
+    </div>
+  </header>
+  <section class="menu-header">
+    <div class="tabs">
+      <button class="tab-button active" onclick="showTab('kuzhi')">Mandi</button>
+      <button class="tab-button" onclick="showTab('alfahm')">Al Fahm</button>
+    </div>
+  </section>
+  <section class="tab-content" id="kuzhi">
+    <div class="menu-boxes">
+      <div class="menu-card">Chicken Mandi</div>
+      <div class="menu-card">Beef Mandi</div>
+      <div class="menu-card">Grilled Beef Mandi</div>
+      <div class="menu-card">Mutton Mandi</div>
+      <div class="menu-card">Shawaya Mandi</div>
+      <div class="menu-card">Masala Shawaya Mandhi</div>
+      <div class="menu-card">Alfahm Mandi</div>
+      <div class="menu-card">Peri Peri Alfahm Mandi</div>
+      <div class="menu-card">Honey Chilli Alfahm Mandi</div>
+      <div class="menu-card">Green Chilli Alfahm Mandi</div>
+      <div class="menu-card">Mandi Rice</div>
+      <div class="menu-card">Buhari Rice</div>
+      <div class="menu-card">Mandi Chicken</div>
+    </div>
+  </section>
+  <section class="tab-content" id="alfahm" style="display:none;">
+    <div class="menu-boxes">
+      <div class="menu-card">Alfahm</div>
+      <div class="menu-card">Peri Peri Alfahm</div>
+      <div class="menu-card">Green Chilli Alfahm</div>
+      <div class="menu-card">Honey Chilli Alfahm</div>
+      <div class="menu-card">Shawaya</div>
+      <div class="menu-card">Masala Shawaya</div>
+      <div class="menu-card">Grilled Beef</div>
+      <div class="menu-card">Kuboos</div>
+      <div class="menu-card">Rumali Roti</div>
+    </div>
+  </section>
+  <section class="tab-content" id="buhari" style="display:none;">
+    <div class="menu-boxes">
+      <div class="menu-card">Buhari Chicken Rice</div>
+      <div class="menu-card">Buhari Beef Rice</div>
+      <div class="menu-card">Buhari Combo Rice</div>
+    </div>
+  </section>
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+
+      <!-- Contact -->
+      <div class="footer-box">
+        <h3>Contact</h3>
+
+        <div class="branch">
+          <h4>Thodupuzha Branch</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Vengalloor - Kolani Bypass Rd, Vengalloor, Thodupuzha, Kerala 685608
+          </p>
+          <p><i class="fas fa-phone-alt"></i> +91 90619 96688</p>
+          <p><i class="fas fa-envelope"></i> zayanmandirestaurant@gmail.com</p>
+        </div>
+
+        <div class="branch">
+          <h4>kayamkulam Branch</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Near Beach Road, kayamkulam, Kerala 673001</p>
+          <p><i class="fas fa-phone-alt"></i> +91 98765 43210</p>
+          <p><i class="fas fa-envelope"></i> zayanmandikozhikode@gmail.com</p>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div class="footer-box">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">› About Us</a></li>
+          <li><a href="conduct.html">› Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Stay Updated -->
+      <div class="footer-box">
+        <h3>Stay Updated</h3>
+        <p>Subscribe to our newsletter for the latest updates.</p>
+        <form action="#" method="POST">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit">SIGN UP</button>
+        </form>
+      </div>
+    </div>
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      &copy; Zayan Mandi, All Rights Reserved.
+    </div>
+  </footer>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(tab => tab.style.display = 'none');
+      document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+      document.getElementById(tabId).style.display = 'block';
+      event.target.classList.add('active');
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</body>
+
+</html>
