@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zayan Mandi Menu</title>
   <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
+  <!-- Header Section -->
   <header class="menu-header">
     <div class="image-bg"></div>
     <div class="overlay"></div>
@@ -20,12 +22,16 @@
       </p>
     </div>
   </header>
+
+  <!-- Menu Tabs -->
   <section class="menu-header">
     <div class="tabs">
       <button class="tab-button active" onclick="showTab('kuzhi')">Mandi</button>
       <button class="tab-button" onclick="showTab('alfahm')">Al Fahm</button>
     </div>
   </section>
+
+  <!-- Tab Content: Mandi -->
   <section class="tab-content" id="kuzhi">
     <div class="menu-boxes">
       <div class="menu-card">Chicken Mandi</div>
@@ -43,6 +49,8 @@
       <div class="menu-card">Mandi Chicken</div>
     </div>
   </section>
+
+  <!-- Tab Content: Al Fahm -->
   <section class="tab-content" id="alfahm" style="display:none;">
     <div class="menu-boxes">
       <div class="menu-card">Alfahm</div>
@@ -56,6 +64,8 @@
       <div class="menu-card">Rumali Roti</div>
     </div>
   </section>
+
+  <!-- Tab Content: Buhari -->
   <section class="tab-content" id="buhari" style="display:none;">
     <div class="menu-boxes">
       <div class="menu-card">Buhari Chicken Rice</div>
@@ -63,6 +73,8 @@
       <div class="menu-card">Buhari Combo Rice</div>
     </div>
   </section>
+
+  <!-- Footer -->
   <footer class="footer" id="footer">
     <div class="footer-container">
 
@@ -91,7 +103,7 @@
         <h3>Company</h3>
         <ul>
           <li><a href="about.html">› About Us</a></li>
-          <li><a href="conduct.html">› Contact Us</a></li>
+          <li><a href="contact.html">› Contact Us</a></li>
         </ul>
       </div>
 
@@ -105,12 +117,17 @@
         </form>
       </div>
     </div>
+
     <!-- Bottom -->
     <div class="footer-bottom">
       &copy; Zayan Mandi, All Rights Reserved.
     </div>
   </footer>
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Tab Script -->
   <script>
     function showTab(tabId) {
       document.querySelectorAll('.tab-content').forEach(tab => tab.style.display = 'none');
@@ -119,6 +136,7 @@
       event.target.classList.add('active');
     }
   </script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </body>
 
